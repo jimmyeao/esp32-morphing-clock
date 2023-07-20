@@ -23,8 +23,8 @@ uint16_t colorWheel(uint8_t pos) {
 void display_init() {
   HUB75_I2S_CFG::i2s_pins _pins={R1_PIN, G1_PIN, B1_PIN, R2_PIN, G2_PIN, B2_PIN, A_PIN, B_PIN, C_PIN, D_PIN, E_PIN, LAT_PIN, OE_PIN, CLK_PIN};
   HUB75_I2S_CFG mxconfig(
-	128, // Module width
-	64, // Module height
+	64, // Module width
+	32, // Module height
 	1, // chain length
 	_pins // pin mapping
   );
@@ -40,7 +40,7 @@ void display_init() {
 void logStatusMessage(const char *message) {
   Serial.println(message);
   // Clear the last line first!
-  dma_display->fillRect(0, 56, 128, 8, 0);
+  dma_display->fillRect(0, 56, 64, 8, 0);
 
   dma_display->setTextSize(1);     // size 1 == 8 pixels high
   dma_display->setTextWrap(false); // Don't wrap at end of line - will do ourselves
@@ -58,7 +58,7 @@ void logStatusMessage(const char *message) {
 void logStatusMessage(String message) {
   Serial.println(message);
   // Clear the last line first!
-  dma_display->fillRect(0, 56, 128, 8, 0);
+  dma_display->fillRect(0, 56, 64, 8, 0);
 
   dma_display->setTextSize(1);     // size 1 == 8 pixels high
   dma_display->setTextWrap(false); // Don't wrap at end of line - will do ourselves
@@ -73,7 +73,7 @@ void logStatusMessage(String message) {
 }
 
 void clearStatusMessage() {
-   dma_display->fillRect(0, 56, 128, 8, 0); 
+   dma_display->fillRect(0, 56, 64, 8, 0); 
    logMessageActive = false;
 }
 

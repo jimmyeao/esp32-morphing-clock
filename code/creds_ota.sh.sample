@@ -1,7 +1,7 @@
-MQTT_HOST="host.or.ip.addr"
-MQTT_USER="username"
-MQTT_PASS="password"
-MQTT_TOPIC="topic/for/update/request"
+MQTT_HOST="192.168.0.64"
+MQTT_USER=""
+MQTT_PASS=""
+MQTT_TOPIC="matrix/64x32/update/request"
 MQTT_PAYLOAD="1"
-MQTT_ESP_HOSTNAME="my-esp-name"
+MQTT_ESP_HOSTNAME="6432matrix"
 WAIT_TIME_SEC=30

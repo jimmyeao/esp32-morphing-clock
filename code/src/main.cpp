@@ -94,7 +94,7 @@ void setup(){
   logStatusMessage("Woof!");
 
   //logStatusMessage(WiFi.localIP().toString());
-  drawTestBitmap();
+  //drawTestBitmap();
   displayWeatherData();
   
   displayTicker.attach_ms(30, displayUpdater);

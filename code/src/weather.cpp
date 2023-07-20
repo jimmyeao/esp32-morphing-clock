@@ -143,7 +143,7 @@ void drawTestBitmap() {
   drawBitmap(BITMAP_X+27, BITMAP_Y, 8, 8, showers_8x8);
   drawBitmap(BITMAP_X+36, BITMAP_Y, 8, 8, snow_8x8);
   drawBitmap(BITMAP_X+45, BITMAP_Y, 8, 8, storm_8x8);*/
-  drawBitmap(BITMAP_X+58, BITMAP_Y, 12, 20, minion);
+  drawBitmap(BITMAP_X+29, BITMAP_Y, 12, 20, minion);
 }
 
 // Draw one of the available weather icons in the specified space
@@ -188,16 +188,16 @@ void displayTodaysTempRange() {
   dma_display->fillRect(TEMPRANGE_X + 44, TEMPRANGE_Y, 2, 2, TEMPRANGE_COLOR);
 }
 
-void displayWeatherForecast() {
-  for (int i=1; i<5; i++) {  //skip day 0, since we are already displaying it somewhere else using displayTodaysWeather()
-    drawWeatherIcon(WEATHER_FORECAST_X + 9*(i-1), WEATHER_FORECAST_Y, 8, 8, forecast5Days[i], false);
-  }
-}
+//void displayWeatherForecast() {
+ // for (int i=1; i<5; i++) {  //skip day 0, since we are already displaying it somewhere else using displayTodaysWeather()
+ //   drawWeatherIcon(WEATHER_FORECAST_X + 9*(i-1), WEATHER_FORECAST_Y, 8, 8, forecast5Days[i], false);
+ // }
+//}
 
 void displayWeatherData() {
   displayTodaysWeather();
   displayTodaysTempRange();
-  displayWeatherForecast();
+  //displayWeatherForecast();
 }
 
 //Source: https://github.com/witnessmenow/LED-Matrix-Display-Examples/blob/master/LED-Matrix-Mario-Display/LED-Matrix-Mario-Display.ino
