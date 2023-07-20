@@ -2,7 +2,7 @@
 ESP32 HUB75 Matrix Morphing Clock
 
 A clock based on a HUB75 RGB LED matrix, controlled by an ESP32.
-
+Modified to run on a 63x32 Matrix!
 ![Photo](photos/animation1-opt.gif)
 
 So far, it does the following:
@@ -27,7 +27,7 @@ You can find the "components" for the project here:
 
 ### Version 0.2
 * Added MQTT SSL support (thanks to [Andreas](https://github.com/lefty01)). Disabled by default, since I do not use it when testing
-* Implemented weather forecast - clock now displays min/max temperature for today, today's + next 4 days' forecast icons
+* Implemented weather forecast - clock now displays min/max temperature for today
 * Decreased light sensor read interval (interval is now configurable from config.h)
 * Added a watchdog timer to automatically reset the unit (sometimes the main thread seems to hang, possibly due to the light sensor read?)
 
