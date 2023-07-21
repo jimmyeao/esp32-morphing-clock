@@ -3,20 +3,19 @@ ESP32 HUB75 Matrix Morphing Clock
 
 A clock based on a HUB75 RGB LED matrix, controlled by an ESP32.
 Modified to run on a 63x32 Matrix!
-![Photo](photos/animation1-opt.gif)
+![IMG_5742](https://github.com/jimmyeao/esp32-morphing-clock/assets/5197831/b3ed19ec-da13-48d7-839f-38b37a54365d)
+
 
 So far, it does the following:
 * Displays the current date, time, and day of the week
 * Updates the time on startup and periodically, via NTP
-* Displays the current outdoor temperature and humidity (received via MQTT - if you want to use this, you will need an MQTT server and a separate temperature sensor publishing to it!)
-* Displays the current light levels, read via a TSL2591 I2C light sensor
-* Displays the weather forecast for current day (including min/max temperatures), and for the next 4 days
+* TODO Displays the current outdoor temperature and humidity (received via MQTT - if you want to use this, you will need an MQTT server and a separate temperature sensor publishing to it!)
+* TODO Displays the current light levels, read via a TSL2591 I2C light sensor
+* Displays the weather forecast for current day (including min/max temperatures)
 * Can receive OTA updates, triggered via an MQTT message (of course, this also requires an MQTT server :) )
 
 This is very much a work in progress, and it is far from being finished. Things that are planned for the future include:
-* Use the current light levels to control the matrix brightness
-* Display alerts on-screen (received via MQTT)
-* Use the buzzer module to get the user's attention when an alert comes in
+Forked from https://github.com/bogd/esp32-morphing-clock 
 
 You can find the "components" for the project here:
 * The full source code is [here](code/)  - requires PlatformIO!
