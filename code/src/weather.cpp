@@ -182,10 +182,7 @@ void displayTodaysTempRange() {
   dma_display->setTextColor(TEMPRANGE_COLOR);
 
   dma_display->setCursor(TEMPRANGE_X, TEMPRANGE_Y);   
-  dma_display->printf("%3d/%3d C", minTempToday, maxTempToday);
-  
-  // Draw the degree symbol manually
-  dma_display->fillRect(TEMPRANGE_X + 44, TEMPRANGE_Y, 2, 2, TEMPRANGE_COLOR);
+  dma_display->printf("Lo/Hi%2d/%-2d", minTempToday, maxTempToday);
 }
 
 //void displayWeatherForecast() {

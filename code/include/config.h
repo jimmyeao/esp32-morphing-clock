@@ -48,15 +48,15 @@
 
 // Day of week
 #define DOW_X 1
-#define DOW_Y 16
+#define DOW_Y 17
 #define DOW_COLOR ((0x00 & 0xF8) << 8) | ((0x40 & 0xFC) << 3) | (0xFF >> 3)
 // Date
-#define DATE_X DOW_X
-#define DATE_Y DOW_Y+8
+#define DATE_X DOW_X + 26
+#define DATE_Y DOW_Y
 #define DATE_COLOR DOW_COLOR
 //Width and height are for both DATE and DOW
 #define DATE_WIDTH 30
-#define DATE_HEIGHT 18
+#define DATE_HEIGHT 9
 
 
 // Weather sensor data
@@ -83,8 +83,8 @@
 #define BITMAP_X 0
 #define BITMAP_Y 44
 
-#define HEARTBEAT_X 36
-#define HEARTBEAT_Y 12
+#define HEARTBEAT_X 56
+#define HEARTBEAT_Y 17
 
 // Watchdog settings
 #define WDT_TIMEOUT 60   // If the WDT is not reset within X seconds, reboot the unit
@@ -98,8 +98,8 @@
 #define WEATHER_FORECAST_Y 22
 
 //Temperature range for today
-#define TEMPRANGE_X 32
-#define TEMPRANGE_Y 22
+#define TEMPRANGE_X 1
+#define TEMPRANGE_Y 25
 #define TEMPRANGE_WIDTH 32
 #define TEMPRANGE_HEIGHT 8
 #define TEMPRANGE_COLOR ((0x00 & 0xF8) << 8) | ((0xFF & 0xFC) << 3) | (0xFF >> 3)
