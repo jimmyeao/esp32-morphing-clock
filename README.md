@@ -6,6 +6,10 @@ Modified to run on a 63x32 Matrix!
 ![IMG_5742](https://github.com/jimmyeao/esp32-morphing-clock/assets/5197831/b3ed19ec-da13-48d7-839f-38b37a54365d)
 
 
+https://github.com/jimmyeao/esp32-morphing-clock/assets/5197831/71f74afe-bfb6-416f-abbc-fc5877508a02
+
+
+
 So far, it does the following:
 * Displays the current date, time, and day of the week
 * Updates the time on startup and periodically, via NTP
