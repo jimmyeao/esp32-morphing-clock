@@ -55,7 +55,7 @@
 #define DATE_Y DOW_Y
 #define DATE_COLOR DOW_COLOR
 //Width and height are for both DATE and DOW
-#define DATE_WIDTH 30
+#define DATE_WIDTH 56
 #define DATE_HEIGHT 9
 
 
