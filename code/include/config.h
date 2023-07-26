@@ -56,7 +56,7 @@
 #define DATE_COLOR DOW_COLOR
 //Width and height are for both DATE and DOW
 #define DATE_WIDTH 56
-#define DATE_HEIGHT 9
+#define DATE_HEIGHT 8
 
 
 // Weather sensor data
@@ -100,7 +100,7 @@
 //Temperature range for today
 #define TEMPRANGE_X 1
 #define TEMPRANGE_Y 25
-#define TEMPRANGE_WIDTH 32
+#define TEMPRANGE_WIDTH 63
 #define TEMPRANGE_HEIGHT 8
 #define TEMPRANGE_COLOR ((0x00 & 0xF8) << 8) | ((0xFF & 0xFC) << 3) | (0xFF >> 3)
 
